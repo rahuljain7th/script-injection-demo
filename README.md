@@ -23,6 +23,8 @@ setTimeout(function() {
 9. Notice the Spam content while retrieve the Message this example of Script Injection Attack. 
 
 Solution to Avoid The Script Injection.
-Use of Bleach http://bleach.readthedocs.io/en/latest/ to avoid the script injection attack
+1.Use of Bleach http://bleach.readthedocs.io/en/latest/ to avoid the script injection attack.
+2.Update the table where the script was already injected using the update query.
+      UPDATE post SET content='CHEESE!' where content like %SPAM%;
 
 
